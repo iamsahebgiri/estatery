@@ -4,6 +4,7 @@ import heartRegular from "@iconify/icons-fluent/heart-24-regular";
 import rectangleLandscapeRegular from "@iconify/icons-fluent/rectangle-landscape-24-regular";
 import sparkleFilled from "@iconify/icons-fluent/sparkle-24-filled";
 import { Icon } from "@iconify/react";
+import Image from "next/image";
 
 export type PropertyType = {
   id: number;
@@ -28,11 +29,17 @@ export default function Property({ property }: PropertyProps) {
   return (
     <div className="max-w-sm bg-white rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
-        <img
-          className="w-full h-60 rounded-t-lg object-cover"
-          src={property.image}
-          alt=""
-        />
+        <div className="w-full h-60 relative">
+          <Image
+            src={`${property.image}&q=80`}
+            className="rounded-t-lg"
+            alt={property.streetName}
+            layout="fill"
+            placeholder="blur"
+            objectFit="cover"
+            blurDataURL={`${property.image}&q=5`}
+          />
+        </div>
       </a>
       <div className="p-5 relative">
         {property.isPopular && (

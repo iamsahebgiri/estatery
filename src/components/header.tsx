@@ -7,9 +7,8 @@ import { classNames } from "~/utils/classnames";
 
 const manageProperties = [
   {
-    name: "Clear Data",
-    description:
-      "Get all of your questions answered in our forums or contact support.",
+    name: "Add property",
+    description: "Get money by adding more property",
     href: "#",
   },
 ];
@@ -185,7 +184,7 @@ export default function Header() {
                   Sign up
                 </a>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?{" "}
+                  Existing user?{" "}
                   <a href="#" className="text-indigo-600 hover:text-indigo-500">
                     Sign in
                   </a>

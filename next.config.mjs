@@ -9,4 +9,7 @@ function defineNextConfig(config) {
 
 export default defineNextConfig({
   reactStrictMode: true,
+  images: {
+    domains: ["images.unsplash.com"],
+  },
 });

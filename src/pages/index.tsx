@@ -64,14 +64,10 @@ const Home: NextPageWithAuthAndLayout = () => {
             }
             if (when !== "") {
               // 2022-07-31 --> 31/07/2022
-
               results = results.filter(
                 (result) => result.when === when.split("-").reverse().join("/")
               );
             }
-
-            console.log(when);
-
             setProperties(results);
           })}
         >
