@@ -14,7 +14,7 @@ const Home: NextPageWithAuthAndLayout = () => {
     <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
       <div className="mt-4 mb-8 flex flex-col sm:flex-row align-center justify-between">
         <h2 className="font-bold text-2xl sm:text-3xl">
-          Search properties to rent ({properties.length})
+          Search properties to rent
         </h2>
         <form className="group relative mt-4 sm:mt-0">
           <input
