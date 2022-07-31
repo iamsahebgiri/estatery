@@ -38,7 +38,7 @@ const Home: NextPageWithAuthAndLayout = () => {
           </svg>
         </form>
       </div>
-      <div className="bg-white p-4 my-8 rounded-md">
+      <div className="bg-white p-4 my-8 rounded-md shadow-sm">
         <form
           className="grid grid-cols-1 items-center gap-6 sm:grid-cols-5"
           onSubmit={handleSubmit((data) => {
